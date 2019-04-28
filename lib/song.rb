@@ -42,5 +42,6 @@ class Song
   alphabetical_names =  @@all.each.name do |x| x.name
     alphabetical_names.sort
   end
+  end
 
 end
