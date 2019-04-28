@@ -44,11 +44,11 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    row = filename
+    newinstance = filename
 
-      data = row.split(" - ")
-      artist_name = data[0]
-      song_name = data[1].gsub(".mp3", "")
+      info = newinstance.split(" - ")
+      artist_name = info[0]
+      song_name = info[1].gsub(".mp3", "")
 
     song = self.new
     song.name = song_name
